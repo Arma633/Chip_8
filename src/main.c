@@ -13,7 +13,6 @@ int main(int argc, char *argv[]) {
     initScreen();
     initScreenWindow();
     updateScreen();
-
     system("PAUSE");
 
     return 0;
