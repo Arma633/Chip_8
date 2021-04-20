@@ -1,8 +1,8 @@
 #include <SDL.h>
 #define BLACK 0
 #define WHITE 1
-#define LENGTH 32 
-#define WIDTH 64
+#define LENGTH 64 
+#define WIDTH 32
 #define SPIXEL 8
 #define SCREEN_WIDTH WIDTH * SPIXEL
 #define SCREEN_LENGTH LENGTH * SPIXEL
@@ -16,6 +16,7 @@ SDL_Window* screenWindow ;
 SDL_Renderer* screenRenderer;
 SDL_Texture* colorBlitter;
 PIXEL screen[LENGTH][WIDTH];
+SDL_Event event;
 
 void initScreen();
 void initScreenWindow();

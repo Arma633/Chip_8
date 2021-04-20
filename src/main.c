@@ -1,5 +1,7 @@
 #include "main.h"
 
+void pause();
+
 int main(int argc, char *argv[]) {
     /*CPU cpu;
     CPU* cpuPtr = &cpu;
@@ -13,7 +15,33 @@ int main(int argc, char *argv[]) {
     initScreen();
     initScreenWindow();
     updateScreen();
-    system("PAUSE");
+    
 
+    pause();
+   
     return 0;
+}
+
+
+void pause() 
+{ 
+
+    Uint8 next=1; 
+ 
+    do 
+    { 
+        SDL_WaitEvent(&event); 
+
+        switch(event.type) 
+         { 
+             case SDL_QUIT: 
+                    next=0; 
+                    break; 
+             case SDL_KEYDOWN: 
+                    next=0; 
+                    break; 
+             default: break; 
+         } 
+    }while(next==1); 
+
 }
