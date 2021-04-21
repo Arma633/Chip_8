@@ -13,8 +13,11 @@ int main(int argc, char *argv[]) {
     }
 
     initScreen();
+
     initScreenWindow();
+
     updateScreen();
+    
     
 
     pause();
